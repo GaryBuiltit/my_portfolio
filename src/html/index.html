@@ -45,13 +45,13 @@
     <!-- mobile menu -->
     <div
       id="menu"
-      class="absolute flex-col hidden items-center self-end py-8 mt-10 space-y-6 font-bold bg-white sm:w-auto left-6 right-6 top-2 drop-shadow-md z-10"
+      class="absolute flex-col hidden items-center self-end py-8 space-y-6 font-bold bg-white sm:w-auto left-6 right-6 top-2 drop-shadow-md z-10 mt-10"
     >
       <!-- <a href="#">Home</a> -->
-      <a href="/src/about-me.html">About Me</a>
-      <a href="/src/projects.html">My Work</a>
-      <a href="/src/projects.html">My Resume</a>
-      <a href="/src/contact.html">Contact Me</a>
+      <a href="/src/html/about-me.html">About Me</a>
+      <a href="/src/html/projects.html">My Work</a>
+      <a href="/src/html/projects.html">My Resume</a>
+      <a href="/src/html/contact.html">Contact Me</a>
     </div>
 
     <!-- ************* Hero Section ************** -->
@@ -74,15 +74,23 @@
         <div class="flex items-start md:hidden"></div>
       </div>
       <div
-        class="h-60 grid grid-cols-2 w-auto bg-gray-200 md:flex md:flex-row md:h-24 md:justify-evenly md:items-center"
+        class="h-60 grid grid-cols-2 justify-items-center items-center w-auto bg-gray-200 md:flex md:flex-row md:h-24 md:justify-evenly md:items-center"
       >
         <img
           src="/images/html-css-javascript-transformed.png"
-          alt=""
-          class="w-56"
+          alt="Web tech Logos"
+          class="w-48 md:w-56"
         />
-        <img src="/images/python-3.svg" alt="" class="w-52 md:pt-2" />
-        <img src="/images/Google-flutter-logo.png" alt="" class="w-48" />
+        <img
+          src="/images/python-3.svg"
+          alt="Python logo"
+          class="w-44 md:w-52 md:pt-2"
+        />
+        <img
+          src="/images/Google-flutter-logo.png"
+          alt="Flutter logo"
+          class="w-48"
+        />
         <img src="/images/html-css icons.png" alt="" class="w-32" />
       </div>
     </div>
@@ -200,7 +208,7 @@
         <!-- CTA button -->
         <div>
           <a
-            href="#"
+            href="./contact.html"
             class="flex px-6 py-4 text-white font-extrabold text-xl bg-transparent border-white border-2 rounded-full baseline hover:bg-white hover:text-gray-200"
           >
             Get in touch
