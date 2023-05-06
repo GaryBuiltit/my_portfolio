@@ -831,16 +831,16 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.bg-\[url\(\'\.\.\/images\/Caster-Podcast-App\.svg\'\)\] {
-  background-image: url('../images/Caster-Podcast-App.svg');
+.bg-\[url\(\'\/src\/images\/Caster-Podcast-App\.svg\'\)\] {
+  background-image: url('/src/images/Caster-Podcast-App.svg');
 }
 
-.bg-\[url\(\'\.\.\/images\/Digital-Clock-Site-Mockup\.svg\'\)\] {
-  background-image: url('../images/Digital-Clock-Site-Mockup.svg');
+.bg-\[url\(\'\/src\/images\/Digital-Clock-Site-Mockup\.svg\'\)\] {
+  background-image: url('/src/images/Digital-Clock-Site-Mockup.svg');
 }
 
-.bg-\[url\(\'\.\.\/images\/drooli-site-mockup\.svg\'\)\] {
-  background-image: url('../images/drooli-site-mockup.svg');
+.bg-\[url\(\'\/src\/images\/drooli-site-mockup\.svg\'\)\] {
+  background-image: url('/src/images/drooli-site-mockup.svg');
 }
 
 .bg-\[url\(\'\/src\/images\/tablet_play\.gif\'\)\] {
@@ -849,18 +849,6 @@ video {
 
 .bg-\[url\(\/src\/images\/happy-black-woman\.jpeg\)\] {
   background-image: url(/src/images/happy-black-woman.jpeg);
-}
-
-.bg-\[url\(\'\/src\/images\/drooli-site-mockup\.svg\'\)\] {
-  background-image: url('/src/images/drooli-site-mockup.svg');
-}
-
-.bg-\[url\(\'\/src\/images\/Caster-Podcast-App\.svg\'\)\] {
-  background-image: url('/src/images/Caster-Podcast-App.svg');
-}
-
-.bg-\[url\(\'\/src\/images\/Digital-Clock-Site-Mockup\.svg\'\)\] {
-  background-image: url('/src/images/Digital-Clock-Site-Mockup.svg');
 }
 
 .bg-cover {
