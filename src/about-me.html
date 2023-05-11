@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./output.css" />
+    <title>About Me</title>
+  </head>
+  <body>
+    <!-- ********* nav bar ********* -->
+    <nav id="navMenu" class="flex items-start bg-profileGray w-full z-10">
+      <div class="flex flex-row items-center justify-between px-5 py-3 w-full">
+        <a href="./index.html"
+          ><h1 class="text-3xl font-bold text-white">Gary Alford</h1></a
+        >
+        <div class="hidden md:flex space-x-8 text-white">
+          <a href="./about-me.html" class="hover:font-bold">About Me</a>
+          <a href="./projects.html" class="hover:font-bold">My Portfolio</a>
+          <a href="./projects.html" class="hover:font-bold">My Resume</a>
+        </div>
+        <a
+          href="./contact.html"
+          class="hidden md:flex px-3 py-1 text-white bg-transparent rounded-full baseline border-solid border-white border-2 hover:bg-white hover:text-profileGray"
+        >
+          Contact Me
+        </a>
+        <!-- mobile hamburger Menu -->
+        <button
+          id="menu-btn"
+          class="block hambuger md:hidden focus:outline-none"
+        >
+          <span class="hamburger-top"></span>
+          <span class="hamburger-middle"></span>
+          <span class="hamburger-bottom"></span>
+        </button>
+      </div>
+    </nav>
+    <!-- mobile menu -->
+    <div
+      id="menu"
+      class="absolute flex-col hidden items-center self-end py-8 mt-10 space-y-6 font-bold bg-white sm:w-auto left-6 right-6 top-2 drop-shadow-md z-10"
+    >
+      <a href="./about-me.html">About Me</a>
+      <a href="./projects.html">My Work</a>
+      <a href="./projects.html">My Resume</a>
+      <a href="./contact.html">Contact Me</a>
+    </div>
+
+    <main class="flex flex-col items-center">
+      <div class="flex flex-col items-center my-10">
+        <img
+          src="./images/family.jpeg"
+          alt="My Family"
+          class="rounded-full w-52 h-52 md:h-80 md:w-80 mb-6"
+        />
+        <h1 class="text-profileGray text-4xl md:text-5xl font-bold">
+          Who is Gary?
+        </h1>
+        <p
+          class="text-profileGray text-center text-xl md:text-2xl font-light max-w-3xl mt-6"
+        >
+          I'm a full stack mobile and web developer located in Virginia Beach,
+          VA. I started my journey in tech on the hardware side with a degree in
+          E.E.T. and later discovered a love for coding. I have a passion for
+          business and entrepreneurship as I have owned multiple businesses and
+          love to see other start-ups flourish. I feel it is not only important
+          to have great code or a pretty UI but to understand how everything
+          will tie together to effect the business as a whole.
+        </p>
+
+        <a
+          href="./contact.html"
+          class="text-2xl font-semibold text-profileGray mt-4"
+        >
+          Let work together to bring your ideas to life!
+        </a>
+      </div>
+    </main>
+    <!-- Footer -->
+    <section>
+      <footer class="h-72 bg-profileGray w-full">
+        <div class="flex flex-col">
+          <div
+            class="flex flex-col items-center justify-center pt-9 md:items-start md:flex-row md:space-x-20 md:pt-20 h-full"
+          >
+            <div class="space-y-2 pb-4">
+              <h1
+                class="text-2xl text-white font-bold text-center md:text-left md:text-3xl"
+              >
+                A Gary Alford Site
+              </h1>
+              <p class="text-white text-md font-light">
+                Email:
+                <a href="#" class="text-blue-600 font-semibold text-xl"
+                  >GaryBuiltIt86@gmail.com</a
+                >
+              </p>
+            </div>
+            <div class="flex flex-col text-white">
+              <span class="font-bold text-xl pb-4">Menu</span>
+              <a href="./about-me.html" class="font-light hover:font-semibold"
+                >About Me</a
+              >
+              <a href="./projects.html" class="font-light hover:font-semibold"
+                >My Work</a
+              >
+              <a href="./projects.html" class="font-light hover:font-semibold"
+                >My Resume</a
+              >
+            </div>
+          </div>
+          <!-- <div>
+            <span class="w-2/3 bg-white h-1"></span>
+          </div> -->
+        </div>
+      </footer>
+    </section>
+    <script src="./js/about.js"></script>
+  </body>
+</html>
