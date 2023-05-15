@@ -50,6 +50,24 @@ function onHoverEnd(projectNum) {
   }
 }
 
+mobileProjects.addEventListener("blur", () => {
+  if (projectView === "mobile") {
+    let projectBtn = document.getElementById("projectBtn" + projectNum);
+    let projectDet = document.getElementById("projectDetails" + projectNum);
+    projectBtn.classList.toggle("hidden");
+    projectBtn.classList.toggle("flex");
+    projectDet.classList.toggle("hidden");
+    projectDet.classList.toggle("flex");
+  } else {
+    let projectBtn = document.getElementById("webProjectBtn" + projectNum);
+    let projectDet = document.getElementById("webProjectDetails" + projectNum);
+    projectBtn.classList.toggle("hidden");
+    projectBtn.classList.toggle("flex");
+    projectDet.classList.toggle("hidden");
+    projectDet.classList.toggle("flex");
+  }
+});
+
 mobileProjectsBtn.addEventListener("click", () => {
   projectView = "mobile";
   mobileProjectsBtn.classList.add("shadow-xl");

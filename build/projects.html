@@ -17,7 +17,7 @@
         <div class="hidden md:flex space-x-8 text-white">
           <a href="./about-me.html" class="hover:font-bold">About Me</a>
           <a href="./projects.html" class="hover:font-bold">My Portfolio</a>
-          <a href="./projects.html" class="hover:font-bold">My Resume</a>
+          <!-- <a href="./projects.html" class="hover:font-bold">My Resume</a> -->
         </div>
         <a
           href="./contact.html"
@@ -43,274 +43,276 @@
     >
       <a href="./about-me.html">About Me</a>
       <a href="./projects.html">My Work</a>
-      <a href="./projects.html">My Resume</a>
+      <!-- <a href="./projects.html">My Resume</a> -->
       <a href="./contact.html">Contact Me</a>
     </div>
 
     <!-- ********** project type buttons *********** -->
-    <div class="flex flex-row items-center justify-center pt-8 space-x-12">
-      <button
-        id="mobileBtn"
-        class="rounded-full border-solid border-2 border-profileGray h-14 w-32 font-extrabold shadow-xl md:hover:font-extrabold md:hover:shadow-xl"
-      >
-        Mobile
-      </button>
-      <button
-        id="webBtn"
-        class="rounded-full border-solid border-2 border-profileGray h-14 w-32 md:hover:shadow-xl md:hover:font-extrabold"
-      >
-        Web
-      </button>
-    </div>
-
-    <!-- ************ Projects Section ************* -->
-    <section id="projects">
-      <!-- ############# Mobile ############# -->
-
-      <div id="mobile" class="flex flex-col fade">
-        <!-- Mobile dev description -->
-        <div
-          id="mobileDescription"
-          class="flex flex-col items-center mt-10 text-profileGray"
+    <main class="ipro">
+      <div class="flex flex-row items-center justify-center pt-8 space-x-12">
+        <button
+          id="mobileBtn"
+          class="rounded-full border-solid border-2 border-profileGray h-14 w-32 font-extrabold shadow-xl md:hover:font-extrabold md:hover:shadow-xl"
         >
-          <h1 class="text-5xl font-bold mb-5">Mobile Projects</h1>
-          <p class="max-w-2xl text-center text-2xl font-light">
-            With flutter I build beautiful, natively compiled, multi-platform
-            mobile applications from a single codebase. If you want to reduce
-            development time and cost while not compromising quality Flutter is
-            definitely a good way to go.
-          </p>
-        </div>
-        <!-- Mobile Projects -->
-        <div
-          class="flex flex-row relative p-3 space-x-8 overflow-x-scroll md:pl-10"
+          Mobile
+        </button>
+        <button
+          id="webBtn"
+          class="rounded-full border-solid border-2 border-profileGray h-14 w-32 md:hover:shadow-xl md:hover:font-extrabold"
         >
-          <!-- mobile project 1 -->
-          <div
-            id="project1"
-            class="flex-shrink-0 my-10 h-80 w-80 md:h-96 md:w-96 rounded-2xl drop-shadow-2xl"
-            onmouseover="onHover(1)"
-            onmouseout="onHoverEnd(1)"
-          >
-            <div class="relative z-10">
-              <video autoplay loop muted class="rounded-2xl">
-                <source src="./images/Letter-Doodle-App-vid.mp4" />
-                video tag not supprted
-              </video>
-            </div>
-            <div
-              id="projectBtn1"
-              class="hidden relative flex-col items-center justify-center rounded-2xl backdrop-brightness-50 h-full w-full z-30 -mt-80 md:-mt-96"
-            >
-              <h1 class="text-2xl font-bold mb-1 text-white">
-                Letter Doodle App
-              </h1>
-              <a
-                href="https://github.com/GaryBuiltit/Flutter_Letter_Doodle_App"
-                target="_blank"
-                class="flex items-center justify-center rounded-full border-solid border-white border-2 text-white h-11 w-32 hover:bg-white hover:text-profileGray hover:font-bold"
-              >
-                Code
-              </a>
-              <a
-                href="#"
-                target="_blank"
-                class="flex items-center justify-center mt-2 rounded-full border-solid border-white border-2 text-white h-11 w-32 hover:bg-white hover:text-profileGray hover:font-bold"
-              >
-                Live App
-              </a>
-            </div>
-          </div>
-          <!-- mobile project 2 -->
-          <div
-            id="project2"
-            class="flex-shrink-0 h-80 w-80 my-10 md:h-96 md:w-96 rounded-2xl bg-[url('./images/drooli-site-mockup.svg')] bg-cover bg-no-repeat shadow-2xl"
-            onmouseover="onHover(2)"
-            onmouseout="onHoverEnd(2)"
-          >
-            <div
-              id="projectBtn2"
-              class="hidden relative flex-col items-center justify-center rounded-2xl backdrop-brightness-50 h-full w-full"
-            >
-              <h1 class="text-2xl font-bold mb-1 text-white">
-                Daycare management app
-              </h1>
-              <a
-                href="https://github.com/GaryBuiltit/Drooli_Flutter_Daycare_App"
-                target="_blank"
-                class="flex items-center justify-center rounded-full border-solid border-white border-2 text-white h-11 w-32 hover:bg-white hover:text-profileGray hover:font-bold"
-              >
-                Code
-              </a>
-              <a
-                href="#"
-                target="_blank"
-                class="flex items-center justify-center mt-2 rounded-full border-solid border-white border-2 text-white h-11 w-32 hover:bg-white hover:text-profileGray hover:font-bold"
-              >
-                Live App
-              </a>
-            </div>
-          </div>
-          <!-- mobile project 3 -->
-          <div
-            id="project3"
-            class="flex-shrink-0 h-80 w-80 my-10 md:h-96 md:w-96 rounded-2xl drop-shadow-2xl"
-            onmouseover="onHover(3)"
-            onmouseout="onHoverEnd(3)"
-          >
-            <div class="flex relative z-10">
-              <video autoplay loop muted class="rounded-2xl">
-                <source src="./images/ flash chat app mockup.mp4" />
-                video tag not supprted
-              </video>
-            </div>
-            <div
-              id="projectBtn3"
-              class="hidden relative flex-col items-center justify-center rounded-2xl backdrop-brightness-50 h-full w-full z-30 -mt-80 md:-mt-96"
-            >
-              <h1 class="text-2xl font-bold mb-1 text-white">
-                Chat Messaging App
-              </h1>
-              <a
-                href="https://github.com/GaryBuiltit/Flutter_Chat_App"
-                target="_blank"
-                class="flex items-center justify-center rounded-full border-solid border-white border-2 text-white h-11 w-32 hover:bg-white hover:text-profileGray hover:font-bold"
-              >
-                Code
-              </a>
-              <a
-                href="#"
-                target="_blank"
-                class="flex items-center justify-center mt-2 rounded-full border-solid border-white border-2 text-white h-11 w-32 hover:bg-white hover:text-profileGray hover:font-bold"
-              >
-                Live App
-              </a>
-            </div>
-          </div>
-          <!-- Mobile project 4 -->
-          <div
-            id="project4"
-            class="flex-shrink-0 h-80 w-80 my-10 md:h-96 md:w-96 rounded-2xl bg-[url('./images/Caster-Podcast-App.svg')] bg-cover bg-no-repeat shadow-2xl"
-            onmouseover="onHover(4)"
-            onmouseout="onHoverEnd(4)"
-          >
-            <div
-              id="projectBtn4"
-              class="hidden relative flex-col items-center justify-center rounded-2xl backdrop-brightness-50 h-full w-full"
-            >
-              <h1 class="text-2xl font-bold mb-1 text-white max-w-sm">
-                Caster Podcast Streaming app
-              </h1>
-
-              <a
-                href="https://github.com/GaryBuiltit/Caster_Flutter_Podcast_App"
-                target="_blank"
-                class="flex items-center justify-center rounded-full border-solid border-white border-2 text-white h-11 w-32 hover:bg-white hover:text-profileGray hover:font-bold"
-              >
-                Code
-              </a>
-              <a
-                href="https://play.google.com/store/apps/details?id=com.alford_digital.caster"
-                target="_blank"
-                class="flex items-center justify-center mt-2 rounded-full border-solid border-white border-2 text-white h-11 w-32 hover:bg-white hover:text-profileGray hover:font-bold"
-              >
-                Live App
-              </a>
-            </div>
-          </div>
-        </div>
+          Web
+        </button>
       </div>
 
-      <!-- ############# Web ############# -->
+      <!-- ************ Projects Section ************* -->
+      <section id="projects">
+        <!-- ############# Mobile ############# -->
 
-      <div id="web" class="hidden flex-col fade">
-        <!-- web dev description -->
-        <div
-          id="webDescription"
-          class="flex flex-col items-center mt-10 text-profileGray"
-        >
-          <h1 class="text-5xl font-bold mb-5">Web Projects</h1>
-          <p class="max-w-2xl text-center text-2xl font-light">
-            With flutter I build beautiful, natively compiled, multi-platform
-            mobile applications from a single codebase. If you want to reduce
-            development time and cost while not compromising quality Flutter is
-            definitely a good way to go.
-          </p>
-        </div>
-        <!-- projects -->
-        <div
-          class="flex flex-row relative p-3 space-x-8 overflow-x-scroll md:pl-10"
-        >
-          <!-- Web Project 1 -->
+        <div id="mobile" class="flex flex-col fade">
+          <!-- Mobile dev description -->
           <div
-            id="project1"
-            class="flex-shrink-0 my-10 h-80 w-80 md:h-96 md:w-96 rounded-2xl drop-shadow-2xl"
-            onmouseover="onHover(1)"
-            onmouseout="onHoverEnd(1)"
+            id="mobileDescription"
+            class="flex flex-col items-center mt-10 text-profileGray"
           >
-            <div class="relative z-10">
-              <video autoplay loop muted class="rounded-2xl">
-                <source src="./images/manage-demo-vid.mp4" />
-                video tag not supprted
-              </video>
-            </div>
+            <h1 class="text-5xl font-bold mb-5">Mobile Projects</h1>
+            <p class="max-w-2xl text-center text-2xl font-light">
+              With flutter I build beautiful, natively compiled, multi-platform
+              mobile applications from a single codebase. If you want to reduce
+              development time and cost while not compromising quality Flutter
+              is definitely a good way to go.
+            </p>
+          </div>
+          <!-- Mobile Projects -->
+          <div
+            class="flex flex-row relative p-3 space-x-8 overflow-x-scroll md:pl-10"
+          >
+            <!-- mobile project 1 -->
             <div
-              id="webProjectBtn1"
-              class="hidden relative flex-col items-center justify-center rounded-2xl backdrop-brightness-50 h-full w-full z-30 -mt-80 md:-mt-96"
+              id="project1"
+              class="flex-shrink-0 my-10 h-80 w-80 md:h-96 md:w-96 rounded-2xl drop-shadow-2xl"
+              onmouseover="onHover(1)"
+              onmouseout="onHoverEnd(1)"
             >
-              <h1 class="text-2xl font-bold mb-1 text-white">
-                Manage Landing Page
-              </h1>
-              <a
-                href="https://github.com/GaryBuiltit/Manage-landing-page"
-                target="_blank"
-                class="flex items-center justify-center rounded-full border-solid border-white border-2 text-white h-11 w-32 hover:bg-white hover:text-profileGray hover:font-bold"
+              <div class="relative z-10">
+                <video autoplay loop muted class="rounded-2xl">
+                  <source src="./images/Letter-Doodle-App-vid.mp4" />
+                  video tag not supprted
+                </video>
+              </div>
+              <div
+                id="projectBtn1"
+                class="hidden relative flex-col items-center justify-center rounded-2xl backdrop-brightness-50 h-full w-full z-30 -mt-80 md:-mt-96"
               >
-                Code
-              </a>
-              <a
-                href="https://garybuiltit.github.io/Manage-landing-page/"
-                target="_blank"
-                class="flex items-center justify-center mt-2 rounded-full border-solid border-white border-2 text-white h-11 w-32 hover:bg-white hover:text-profileGray hover:font-bold"
+                <h1 class="text-2xl font-bold mb-1 text-white">
+                  Letter Doodle App
+                </h1>
+                <a
+                  href="https://github.com/GaryBuiltit/Flutter_Letter_Doodle_App"
+                  target="_blank"
+                  class="flex items-center justify-center rounded-full border-solid border-white border-2 text-white h-11 w-32 hover:bg-white hover:text-profileGray hover:font-bold"
+                >
+                  Code
+                </a>
+                <a
+                  href="#"
+                  target="_blank"
+                  class="flex items-center justify-center mt-2 rounded-full border-solid border-white border-2 text-white h-11 w-32 hover:bg-white hover:text-profileGray hover:font-bold"
+                >
+                  Live App
+                </a>
+              </div>
+            </div>
+            <!-- mobile project 2 -->
+            <div
+              id="project2"
+              class="flex-shrink-0 h-80 w-80 my-10 md:h-96 md:w-96 rounded-2xl bg-[url('./images/drooli-mockup.png')] bg-cover bg-no-repeat shadow-2xl"
+              onmouseover="onHover(2)"
+              onmouseout="onHoverEnd(2)"
+            >
+              <div
+                id="projectBtn2"
+                class="hidden relative flex-col items-center justify-center rounded-2xl backdrop-brightness-50 h-full w-full"
               >
-                Live Site
-              </a>
+                <h1 class="text-2xl font-bold mb-1 text-white">
+                  Daycare management app
+                </h1>
+                <a
+                  href="https://github.com/GaryBuiltit/Drooli_Flutter_Daycare_App"
+                  target="_blank"
+                  class="flex items-center justify-center rounded-full border-solid border-white border-2 text-white h-11 w-32 hover:bg-white hover:text-profileGray hover:font-bold"
+                >
+                  Code
+                </a>
+                <a
+                  href="#"
+                  target="_blank"
+                  class="flex items-center justify-center mt-2 rounded-full border-solid border-white border-2 text-white h-11 w-32 hover:bg-white hover:text-profileGray hover:font-bold"
+                >
+                  Live App
+                </a>
+              </div>
+            </div>
+            <!-- mobile project 3 -->
+            <div
+              id="project3"
+              class="flex-shrink-0 h-80 w-80 my-10 md:h-96 md:w-96 rounded-2xl drop-shadow-2xl"
+              onmouseover="onHover(3)"
+              onmouseout="onHoverEnd(3)"
+            >
+              <div class="flex relative z-10">
+                <video autoplay loop muted class="rounded-2xl">
+                  <source src="./images/ flash chat app mockup.mp4" />
+                  video tag not supprted
+                </video>
+              </div>
+              <div
+                id="projectBtn3"
+                class="hidden relative flex-col items-center justify-center rounded-2xl backdrop-brightness-50 h-full w-full z-30 -mt-80 md:-mt-96"
+              >
+                <h1 class="text-2xl font-bold mb-1 text-white">
+                  Chat Messaging App
+                </h1>
+                <a
+                  href="https://github.com/GaryBuiltit/Flutter_Chat_App"
+                  target="_blank"
+                  class="flex items-center justify-center rounded-full border-solid border-white border-2 text-white h-11 w-32 hover:bg-white hover:text-profileGray hover:font-bold"
+                >
+                  Code
+                </a>
+                <a
+                  href="#"
+                  target="_blank"
+                  class="flex items-center justify-center mt-2 rounded-full border-solid border-white border-2 text-white h-11 w-32 hover:bg-white hover:text-profileGray hover:font-bold"
+                >
+                  Live App
+                </a>
+              </div>
+            </div>
+            <!-- Mobile project 4 -->
+            <div
+              id="project4"
+              class="flex-shrink-0 h-80 w-80 my-10 md:h-96 md:w-96 rounded-2xl bg-[url('./images/Caster-Podcast-App.png')] bg-cover bg-no-repeat shadow-2xl"
+              onmouseover="onHover(4)"
+              onmouseout="onHoverEnd(4)"
+            >
+              <div
+                id="projectBtn4"
+                class="hidden relative flex-col items-center justify-center rounded-2xl backdrop-brightness-50 h-full w-full"
+              >
+                <h1 class="text-2xl font-bold mb-1 text-white max-w-sm">
+                  Caster Podcast Streaming app
+                </h1>
+
+                <a
+                  href="https://github.com/GaryBuiltit/Caster_Flutter_Podcast_App"
+                  target="_blank"
+                  class="flex items-center justify-center rounded-full border-solid border-white border-2 text-white h-11 w-32 hover:bg-white hover:text-profileGray hover:font-bold"
+                >
+                  Code
+                </a>
+                <a
+                  href="https://play.google.com/store/apps/details?id=com.alford_digital.caster"
+                  target="_blank"
+                  class="flex items-center justify-center mt-2 rounded-full border-solid border-white border-2 text-white h-11 w-32 hover:bg-white hover:text-profileGray hover:font-bold"
+                >
+                  Live App
+                </a>
+              </div>
             </div>
           </div>
-          <!-- Web Project 2 -->
-          <div
-            id="project2"
-            class="flex-shrink-0 h-80 w-80 my-10 md:h-96 md:w-96 rounded-2xl bg-[url('./images/Digital-Clock-Site-Mockup.svg')] bg-cover bg-no-repeat shadow-2xl"
-            onmouseover="onHover(2)"
-            onmouseout="onHoverEnd(2)"
-          >
-            <div
-              id="webProjectBtn2"
-              class="hidden relative flex-col items-center justify-center rounded-2xl backdrop-brightness-50 h-full w-full"
-            >
-              <h1 class="text-2xl font-bold mb-1 text-white">
-                Digital Clock Site
-              </h1>
+        </div>
 
-              <a
-                href="https://github.com/GaryBuiltit/Digital_clock"
-                target="_blank"
-                class="flex items-center justify-center rounded-full border-solid border-white border-2 text-white h-11 w-32 hover:bg-white hover:text-profileGray hover:font-bold"
+        <!-- ############# Web ############# -->
+
+        <div id="web" class="hidden flex-col fade">
+          <!-- web dev description -->
+          <div
+            id="webDescription"
+            class="flex flex-col items-center mt-10 text-profileGray"
+          >
+            <h1 class="text-5xl font-bold mb-5">Web Projects</h1>
+            <p class="max-w-2xl text-center text-2xl font-light">
+              With flutter I build beautiful, natively compiled, multi-platform
+              mobile applications from a single codebase. If you want to reduce
+              development time and cost while not compromising quality Flutter
+              is definitely a good way to go.
+            </p>
+          </div>
+          <!-- projects -->
+          <div
+            class="flex flex-row relative p-3 space-x-8 overflow-x-scroll md:pl-10"
+          >
+            <!-- Web Project 1 -->
+            <div
+              id="project1"
+              class="flex-shrink-0 my-10 h-80 w-80 md:h-96 md:w-96 rounded-2xl drop-shadow-2xl"
+              onmouseover="onHover(1)"
+              onmouseout="onHoverEnd(1)"
+            >
+              <div class="relative z-10">
+                <video autoplay loop muted class="rounded-2xl">
+                  <source src="./images/manage-demo-vid.mp4" />
+                  video tag not supprted
+                </video>
+              </div>
+              <div
+                id="webProjectBtn1"
+                class="hidden relative flex-col items-center justify-center rounded-2xl backdrop-brightness-50 h-full w-full z-30 -mt-80 md:-mt-96"
               >
-                Code
-              </a>
-              <a
-                href="https://garybuiltit.github.io/Digital_clock/"
-                target="_blank"
-                class="flex items-center justify-center mt-2 rounded-full border-solid border-white border-2 text-white h-11 w-32 hover:bg-white hover:text-profileGray hover:font-bold"
+                <h1 class="text-2xl font-bold mb-1 text-white">
+                  Manage Landing Page
+                </h1>
+                <a
+                  href="https://github.com/GaryBuiltit/Manage-landing-page"
+                  target="_blank"
+                  class="flex items-center justify-center rounded-full border-solid border-white border-2 text-white h-11 w-32 hover:bg-white hover:text-profileGray hover:font-bold"
+                >
+                  Code
+                </a>
+                <a
+                  href="https://garybuiltit.github.io/Manage-landing-page/"
+                  target="_blank"
+                  class="flex items-center justify-center mt-2 rounded-full border-solid border-white border-2 text-white h-11 w-32 hover:bg-white hover:text-profileGray hover:font-bold"
+                >
+                  Live Site
+                </a>
+              </div>
+            </div>
+            <!-- Web Project 2 -->
+            <div
+              id="project2"
+              class="flex-shrink-0 h-80 w-80 my-10 md:h-96 md:w-96 rounded-2xl bg-[url('./images/Digital-Clock-Site-Mockup.png')] bg-cover bg-no-repeat shadow-2xl"
+              onmouseover="onHover(2)"
+              onmouseout="onHoverEnd(2)"
+            >
+              <div
+                id="webProjectBtn2"
+                class="hidden relative flex-col items-center justify-center rounded-2xl backdrop-brightness-50 h-full w-full"
               >
-                Live Site
-              </a>
+                <h1 class="text-2xl font-bold mb-1 text-white">
+                  Digital Clock Site
+                </h1>
+
+                <a
+                  href="https://github.com/GaryBuiltit/Digital_clock"
+                  target="_blank"
+                  class="flex items-center justify-center rounded-full border-solid border-white border-2 text-white h-11 w-32 hover:bg-white hover:text-profileGray hover:font-bold"
+                >
+                  Code
+                </a>
+                <a
+                  href="https://garybuiltit.github.io/Digital_clock/"
+                  target="_blank"
+                  class="flex items-center justify-center mt-2 rounded-full border-solid border-white border-2 text-white h-11 w-32 hover:bg-white hover:text-profileGray hover:font-bold"
+                >
+                  Live Site
+                </a>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </main>
     <!-- Footer -->
     <section>
       <footer class="h-72 bg-profileGray w-full">
@@ -339,13 +341,10 @@
               <a href="./projects.html" class="font-light hover:font-semibold"
                 >My Work</a
               >
-              <a href="./projects.html" class="font-light hover:font-semibold"
+              <!-- <a href="./projects.html" class="font-light hover:font-semibold"
                 >My Resume</a
-              >
+              > -->
             </div>
-          </div>
-          <div>
-            <span class="w-2/3 bg-white h-1"></span>
           </div>
         </div>
       </footer>

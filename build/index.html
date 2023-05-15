@@ -17,7 +17,7 @@
         <div class="hidden md:flex space-x-8 text-white">
           <a href="./about-me.html" class="hover:font-bold">About Me</a>
           <a href="./projects.html" class="hover:font-bold">My Portfolio</a>
-          <a href="./projects.html" class="hover:font-bold">My Resume</a>
+          <!-- <a href="./projects.html" class="hover:font-bold">My Resume</a> -->
         </div>
         <a
           href="./contact.html"
@@ -46,15 +46,13 @@
       <!-- <a href="#">Home</a> -->
       <a href="./about-me.html">About Me</a>
       <a href="./projects.html">My Work</a>
-      <a href="./projects.html">My Resume</a>
+      <!-- <a href="./projects.html">My Resume</a> -->
       <a href="./contact.html">Contact Me</a>
     </div>
 
     <!-- ************* Hero Section ************** -->
     <div class="flex flex-col h-screen">
-      <div
-        class="flex-1 bg-[url('/build/images/tablet_play.gif')] bg-cover bg-no-repeat"
-      >
+      <div class="flex-1 hero">
         <div
           class="flex flex-col space-y-4 items-center justify-center h-full backdrop-brightness-50 md:pb-40"
         >
@@ -67,58 +65,61 @@
             I'm a moblie app and web developer.
           </p>
         </div>
-        <div class="flex items-start md:hidden"></div>
       </div>
       <div
-        class="h-64 grid grid-cols-2 justify-items-center items-center w-auto bg-gray-200 md:flex md:flex-row md:h-24 md:justify-evenly md:items-center"
+        class="h-72 grid grid-cols-2 justify-items-center items-center w-auto bg-gray-200 lg:flex lg:flex-row lg:h-24 lg:justify-evenly lg:items-center overflow-hidden"
       >
         <img
           src="./images/html-css-javascript-transformed.png"
           alt="Web tech Logos"
-          class="w-48 md:w-56"
+          class="w-48 lg:w-48 xl:w-56"
         />
         <img
           src="./images/python-3.svg"
           alt="Python logo"
-          class="w-40 md:w-52 md:pt-2"
+          class="w-40 lg:w-48 lg:pt-2 xl:w-52"
         />
         <img
           src="./images/Google-flutter-logo.png"
           alt="Flutter logo"
-          class="w-36 md:w-48"
+          class="w-36 lg:w-44 xl:w-48"
         />
-        <img src="./images/django-logo.png" alt="" class="w-32" />
+        <img src="./images/django-logo.png" alt="" class="w-32 xl:w-32" />
         <img
           src="./images/postgresql-logo.png"
           alt="PostgreSQL Logo"
-          class="w-52"
+          class="w-52 xl:w-52"
         />
-        <img src="./images/firebase.png" alt="Firebase Logo" class="w-52" />
+        <img
+          src="./images/firebase.png"
+          alt="Firebase Logo"
+          class="w-52 lg:-ml-10 xl:w-52"
+        />
       </div>
     </div>
 
     <!-- *********** Web Section ************ -->
     <section>
-      <div class="flex flex-col justify-center h-screen lg:flex-row">
-        <div class="flex px-3 lg:px-5 lg:w-2/3">
+      <div class="flex flex-col justify-start mb-9 xl:h-screen xl:flex-row">
+        <div class="flex px-3 xl:px-5 xl:w-2/3">
           <video
             src="./images/manage-demo-vid.mp4"
             autoplay="true"
             muted="true"
             loop="true"
-            class="pb-5 md:pt-7 md:p-20 lg:p-20"
+            class="xl:p-20"
           ></video>
         </div>
         <div
-          class="flex flex-col items-center justify-center lg:items-start lg:w-1/3"
+          class="flex flex-col items-center justify-center xl:items-start xl:w-1/3"
         >
           <h1
-            class="text-profileGray text-center text-3xl font-semibold max-w-md tracking-wide leading-relaxed pb-1 lg:pb-3 lg:text-left md:text-5xl"
+            class="text-profileGray text-center text-3xl font-semibold max-w-md tracking-wide leading-relaxed mb-4 lg:max-w-lg xl:pb-3 xl:text-left xl:max-w-md md:text-5xl"
           >
             Lets see your website come to life!
           </h1>
           <p
-            class="text-center lg:text-left text-profileGray font-light text-lg max-w-sm leading-relaxed lg:max-w-xs"
+            class="text-center text-profileGray font-light text-lg max-w-sm leading-relaxed xl:max-w-xs xl:text-left"
           >
             I build custom sites from scratch that are compatible with most
             modern browsers and responsive to different screen sizes. No
@@ -138,9 +139,7 @@
 
     <!-- ************* bnpl section ************* -->
     <section>
-      <div
-        class="flex bg-[url('/build/images/happy-black-woman.jpeg')] h-screen bg-cover bg-no-repeat"
-      >
+      <div class="flex h-screen bnpl">
         <div
           class="flex flex-col space-y-2 items-center justify-center backdrop-brightness-50 w-full md:items-start"
         >
@@ -163,24 +162,24 @@
 
     <!-- ************ mobile Section ********** -->
     <section>
-      <div class="flex flex-col justify-center h-screen lg:flex-row">
-        <div class="flex px-3 lg:px-5 lg:w-2/3">
+      <div class="flex flex-col justify-start my-9 xl:h-screen xl:flex-row">
+        <div class="flex px-3 xl:px-5 xl:w-2/3">
           <img
             src="./images/flutter dev examplepic.svg"
             alt=""
-            class="pb-5 md:pt-7 md:p-20 lg:p-20"
+            class="pb-5 md:p-16 xl:p-20"
           />
         </div>
         <div
-          class="flex flex-col items-center justify-center lg:items-start lg:w-1/3"
+          class="flex flex-col items-center justify-center xl:items-start xl:w-1/3"
         >
           <h1
-            class="text-profileGray text-center text-3xl font-semibold max-w-md tracking-wide leading-relaxed pb-1 lg:pb-3 lg:text-left md:text-5xl"
+            class="text-profileGray text-center text-3xl font-semibold max-w-md tracking-wide leading-relaxed pb-1 lg:mb-4 lg:max-w-lg xl:text-left md:text-5xl"
           >
             Both Android and iOS apps from one single codebase
           </h1>
           <p
-            class="text-center lg:text-left text-profileGray font-light text-lg max-w-sm leading-relaxed lg:max-w-xs"
+            class="text-center text-profileGray font-light text-lg max-w-sm leading-relaxed lg:max-w-lg xl:max-w-xs xl:text-left"
           >
             As a mobile app developer I use Flutter to reduce development time
             and monetary investment needed to have your app on both Android and
@@ -247,9 +246,9 @@
               <a href="./projects.html" class="font-light hover:font-semibold"
                 >My Work</a
               >
-              <a href="./projects.html" class="font-light hover:font-semibold"
+              <!-- <a href="./projects.html" class="font-light hover:font-semibold"
                 >My Resume</a
-              >
+              > -->
             </div>
           </div>
           <div>
